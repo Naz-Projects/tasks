@@ -5,8 +5,52 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+PASS src/text.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      4 |
+      5 | test("renders the text 'Hello World' somewhere", () => {
+    > 6 |     render(<App />);
+        |     ^
+      7 |     const texts = screen.getAllByText(/Hello World/);
+      8 |     expect(texts.length).toBeGreaterThanOrEqual(1);
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/text.test.tsx:6:5)
+
 PASS src/App.test.tsx
-  ✓ renders the course name somewhere (26 ms)
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      4 |
+      5 | test("renders the course name somewhere", () => {
+    > 6 |     render(<App />);
+        |     ^
+      7 |     const linkElement = screen.getByText(/CISC275/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/App.test.tsx:6:5)
 
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -14,8 +58,9 @@ File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 All files |     100 |      100 |     100 |     100 |                   
  App.tsx  |     100 |      100 |     100 |     100 |                   
 ----------|---------|----------|---------|---------|-------------------
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
+
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
 Snapshots:   0 total
-Time:        1.27 s
+Time:        1.801 s
 Ran all test suites.
