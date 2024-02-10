@@ -8,6 +8,9 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/text.test.tsx
   ● Console
 
@@ -52,6 +55,142 @@ PASS src/App.test.tsx
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
       at Object.<anonymous> (src/App.test.tsx:6:5)
 
+PASS src/HtmlCss.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       6 | describe("Some HTML Elements are added.", () => {
+       7 |     test("There is a header", () => {
+    >  8 |         render(<App />);
+         |         ^
+       9 |         const header = screen.getByRole("heading");
+      10 |         expect(header).toBeInTheDocument();
+      11 |     });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:8:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      12 |
+      13 |     test("There is an image with alt text", () => {
+    > 14 |         render(<App />);
+         |         ^
+      15 |         const image = screen.getByRole("img");
+      16 |         expect(image).toBeInTheDocument();
+      17 |         expect(image).toHaveAttribute("alt");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:14:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      19 |
+      20 |     test("There is a list with at least three elements", () => {
+    > 21 |         render(<App />);
+         |         ^
+      22 |         const list = screen.getByRole("list");
+      23 |         expect(list).toBeInTheDocument();
+      24 |         expect(list.children.length).toBeGreaterThanOrEqual(3);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:21:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      28 | describe("Some basic CSS is added.", () => {
+      29 |     test("The background color of the header area is different", () => {
+    > 30 |         render(<App />);
+         |         ^
+      31 |         const banner = screen.getByRole("banner");
+      32 |         expect(banner).not.toHaveStyle({
+      33 |             "background-color": "rgb(40, 44, 52)"
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:30:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      38 | describe("Some Bootstrap Elements are added", () => {
+      39 |     test("There is one bootstrap button with the text 'Log Hello World'", () => {
+    > 40 |         render(<App />);
+         |         ^
+      41 |         const button = screen.getByRole("button", { name: /Log Hello World/i });
+      42 |         expect(button).toBeInTheDocument();
+      43 |         expect(button).toHaveClass("btn");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:40:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      47 |     test("Not clicking the bootstrap button does not logs 'Hello World!'", () => {
+      48 |         const consoleSpy = jest.spyOn(console, "log");
+    > 49 |         render(<App />);
+         |         ^
+      50 |         expect(consoleSpy).not.toHaveBeenCalledWith("Hello World!");
+      51 |     });
+      52 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:49:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      53 |     test("Clicking the bootstrap button logs 'Hello World!'", () => {
+      54 |         const consoleSpy = jest.spyOn(console, "log");
+    > 55 |         render(<App />);
+         |         ^
+      56 |         const button = screen.getByRole("button", { name: /Log Hello World/i });
+      57 |         userEvent.click(button);
+      58 |         expect(consoleSpy).toHaveBeenCalledWith("Hello World!");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/HtmlCss.test.tsx:55:9)
+
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
@@ -59,8 +198,8 @@ All files |     100 |      100 |     100 |     100 |
  App.tsx  |     100 |      100 |     100 |     100 |                   
 ----------|---------|----------|---------|---------|-------------------
 
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
+Test Suites: 3 passed, 3 total
+Tests:       9 passed, 9 total
 Snapshots:   0 total
-Time:        1.801 s
+Time:        2.72 s
 Ran all test suites.
