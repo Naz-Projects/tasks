@@ -14,20 +14,19 @@ Browserslist: caniuse-lite is outdated. Please run:
 PASS src/objects.test.ts
 PASS src/arrays.test.ts
 PASS src/nested.test.ts
-PASS src/functions.test.ts
-PASS src/text.test.tsx
+PASS src/components/StartAttempt.test.tsx
   ● Console
 
     console.error
       Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
 
-      4 |
-      5 | test("renders the text 'Hello World' somewhere", () => {
-    > 6 |     render(<App />);
-        |     ^
-      7 |     const texts = screen.getAllByText(/Hello World/);
-      8 |     expect(texts.length).toBeGreaterThanOrEqual(1);
-      9 | });
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
@@ -35,8 +34,237 @@ PASS src/text.test.tsx
       at node_modules/@testing-library/react/dist/pure.js:101:25
       at act (node_modules/react/cjs/react.development.js:2512:16)
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/text.test.tsx:6:5)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
 
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+PASS src/functions.test.ts
 PASS src/HtmlCss.test.tsx
   ● Console
 
@@ -173,6 +401,784 @@ PASS src/HtmlCss.test.tsx
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
       at Object.<anonymous> (src/HtmlCss.test.tsx:55:9)
 
+PASS src/components/TwoDice.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      26 | describe("StartAttempt Component tests", () => {
+      27 |     beforeEach(() => {
+    > 28 |         render(<StartAttempt />);
+         |         ^
+      29 |     });
+      30 |     test("The Number of attempts is displayed initially, without other numbers", () => {
+      31 |         const attemptNumber = screen.getByText(/(\d+)/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/StartAttempt.test.tsx:28:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      21 |     });
+      22 |     beforeEach(() => {
+    > 23 |         render(<TwoDice />);
+         |         ^
+      24 |     });
+      25 |     test("There is a `left-die` and `right-die` testid", () => {
+      26 |         const leftDie = screen.getByTestId("left-die");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/TwoDice.test.tsx:23:9)
+
+PASS src/components/ChangeType.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("ChangeType Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<ChangeType />);
+         |         ^
+       8 |     });
+       9 |     test("The initial type is Short Answer", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/ChangeType.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("ChangeType Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<ChangeType />);
+         |         ^
+       8 |     });
+       9 |     test("The initial type is Short Answer", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/ChangeType.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("ChangeType Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<ChangeType />);
+         |         ^
+       8 |     });
+       9 |     test("The initial type is Short Answer", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/ChangeType.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("ChangeType Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<ChangeType />);
+         |         ^
+       8 |     });
+       9 |     test("The initial type is Short Answer", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/ChangeType.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("ChangeType Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<ChangeType />);
+         |         ^
+       8 |     });
+       9 |     test("The initial type is Short Answer", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/ChangeType.test.tsx:7:9)
+
+PASS src/components/CycleHoliday.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("CycleHoliday Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<CycleHoliday />);
+         |         ^
+       8 |     });
+       9 |
+      10 |     test("An initial holiday is displayed", () => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/CycleHoliday.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("CycleHoliday Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<CycleHoliday />);
+         |         ^
+       8 |     });
+       9 |
+      10 |     test("An initial holiday is displayed", () => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/CycleHoliday.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("CycleHoliday Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<CycleHoliday />);
+         |         ^
+       8 |     });
+       9 |
+      10 |     test("An initial holiday is displayed", () => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/CycleHoliday.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("CycleHoliday Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<CycleHoliday />);
+         |         ^
+       8 |     });
+       9 |
+      10 |     test("An initial holiday is displayed", () => {
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/CycleHoliday.test.tsx:7:9)
+
+PASS src/components/Counter.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("Counter Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<Counter />);
+         |         ^
+       8 |     });
+       9 |     test("The initial value is 0", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/Counter.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("Counter Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<Counter />);
+         |         ^
+       8 |     });
+       9 |     test("The initial value is 0", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/Counter.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("Counter Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<Counter />);
+         |         ^
+       8 |     });
+       9 |     test("The initial value is 0", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/Counter.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("Counter Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<Counter />);
+         |         ^
+       8 |     });
+       9 |     test("The initial value is 0", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/Counter.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("Counter Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<Counter />);
+         |         ^
+       8 |     });
+       9 |     test("The initial value is 0", () => {
+      10 |         // We use `getByText` because the text MUST be there
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/Counter.test.tsx:7:9)
+
+PASS src/text.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      4 |
+      5 | test("renders the text 'Hello World' somewhere", () => {
+    > 6 |     render(<App />);
+        |     ^
+      7 |     const texts = screen.getAllByText(/Hello World/);
+      8 |     expect(texts.length).toBeGreaterThanOrEqual(1);
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/text.test.tsx:6:5)
+
+PASS src/components/RevealAnswer.test.tsx
+  ● Console
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("RevealAnswer Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<RevealAnswer />);
+         |         ^
+       8 |     });
+       9 |     test("The answer '42' is not visible initially", () => {
+      10 |         const answerText = screen.queryByText(/42/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/RevealAnswer.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("RevealAnswer Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<RevealAnswer />);
+         |         ^
+       8 |     });
+       9 |     test("The answer '42' is not visible initially", () => {
+      10 |         const answerText = screen.queryByText(/42/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/RevealAnswer.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("RevealAnswer Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<RevealAnswer />);
+         |         ^
+       8 |     });
+       9 |     test("The answer '42' is not visible initially", () => {
+      10 |         const answerText = screen.queryByText(/42/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/RevealAnswer.test.tsx:7:9)
+
+    console.error
+      Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
+       5 | describe("RevealAnswer Component tests", () => {
+       6 |     beforeEach(() => {
+    >  7 |         render(<RevealAnswer />);
+         |         ^
+       8 |     });
+       9 |     test("The answer '42' is not visible initially", () => {
+      10 |         const answerText = screen.queryByText(/42/);
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:29670:5)
+      at node_modules/@testing-library/react/dist/pure.js:101:25
+      at act (node_modules/react/cjs/react.development.js:2512:16)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/components/RevealAnswer.test.tsx:7:9)
+
 PASS src/App.test.tsx
   ● Console
 
@@ -195,23 +1201,30 @@ PASS src/App.test.tsx
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
       at Object.<anonymous> (src/App.test.tsx:6:5)
 
-----------------|---------|----------|---------|---------|-------------------
-File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------|---------|----------|---------|---------|-------------------
-All files       |     100 |    96.82 |     100 |     100 |                   
- src            |     100 |    96.82 |     100 |     100 |                   
-  App.tsx       |     100 |      100 |     100 |     100 |                   
-  arrays.ts     |     100 |    94.44 |     100 |     100 | 88                
-  functions.ts  |     100 |      100 |     100 |     100 |                   
-  nested.ts     |     100 |    96.29 |     100 |     100 | 272               
-  objects.ts    |     100 |      100 |     100 |     100 |                   
- src/interfaces |       0 |        0 |       0 |       0 |                   
-  answer.ts     |       0 |        0 |       0 |       0 |                   
-  question.ts   |       0 |        0 |       0 |       0 |                   
-----------------|---------|----------|---------|---------|-------------------
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |     100 |     97.4 |     100 |     100 |                   
+ src               |     100 |    96.82 |     100 |     100 |                   
+  App.tsx          |     100 |      100 |     100 |     100 |                   
+  arrays.ts        |     100 |    94.44 |     100 |     100 | 88                
+  functions.ts     |     100 |      100 |     100 |     100 |                   
+  nested.ts        |     100 |    96.29 |     100 |     100 | 272               
+  objects.ts       |     100 |      100 |     100 |     100 |                   
+ src/components    |     100 |      100 |     100 |     100 |                   
+  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
+  Counter.tsx      |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx |     100 |      100 |     100 |     100 |                   
+  TwoDice.tsx      |     100 |      100 |     100 |     100 |                   
+ src/interfaces    |       0 |        0 |       0 |       0 |                   
+  answer.ts        |       0 |        0 |       0 |       0 |                   
+  question.ts      |       0 |        0 |       0 |       0 |                   
+-------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 7 passed, 7 total
-Tests:       49 passed, 49 total
+Test Suites: 13 passed, 13 total
+Tests:       101 passed, 101 total
 Snapshots:   0 total
-Time:        3.958 s
+Time:        5.733 s
 Ran all test suites.
